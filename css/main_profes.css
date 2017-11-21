@@ -1,0 +1,252 @@
+/*
+ * Estilos de tu proyecto
+ font-family: 'Open Sans', sans-serif;
+ font-family: 'Roboto', sans-serif;
+ color: #FFC107;
+ color: #F7F7F7;
+ color: #333333;
+ color: #1f78b4;
+ #ff4947; #ff6e00;
+ */
+
+body {
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  background-color: #F7F7F7;
+}
+
+header nav {
+  background-color: #fff;
+  background-attachment: fixed;
+  height: 70px;
+  width: 100% auto;
+}
+
+header #lab-logo {
+  background-image: url(../assets/images/laboratoria_logo.png);
+  background-size: cover;
+  width: 180px;
+  height: 45px;
+  margin: 0 auto;
+  display: inline-block;
+  float: left;
+  margin-top: 10px;
+  margin-left: 40%;
+  z-index: 1000;
+}
+
+header nav .btn-idioma, #display-sedes {
+  margin-right: 4%;
+  display: inline-block;
+  margin: 0 auto;
+  flex: auto;
+  margin-left: 30%;
+  margin-top: 15px;
+  font-size: 15px;
+  color: #FFC107;
+}
+
+header nav .btn-idioma a {
+  text-decoration: none;
+  color: #FFC107;
+  padding-left: 10px;
+}
+
+/*estilo de menú sedes desplegable*/
+header nav #display-sedes {
+  padding-left: 10px;
+  width: 170px;
+  line-height: 30px;
+  margin-top: 0;
+  font-weight: bold;
+}
+
+header nav #sedes {
+  width: 170px;
+  background-color: #000;
+  display: inline-block;
+  margin-left: 4%;
+}
+
+header nav #sedes ul {
+  padding: 0;
+  margin-left: 20px;
+  margin-top: 10px;
+  overflow: auto;
+}
+
+header nav #sedes li {
+  list-style: none;
+  line-height: 25px;
+  margin: 0 auto;
+}
+
+header nav #sedes li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header .organizador {
+  height: 80px;
+  background-color: #FFC107;
+}
+
+header .organizador .menus {
+ margin-left: 8%;
+ height: 30px;
+ position: absolute;
+ margin-top: 35px;
+}
+
+header .organizador .menus li {
+  list-style: none;
+  text-decoration: none;
+  float: left;
+  margin-right: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+header .organizador .menus li a {
+  text-decoration: none;
+  padding: 7px 20px 15px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+header .menus li a:hover {
+  background-color: #F7F7F7;
+  color: #333333;
+}
+
+/*estilo de menú generaciones desplegable*/
+header .organizador #display-generacion {
+  text-align: center;
+  line-height: 30px;
+  width: 250px;
+  margin-left: 4%;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #333333;
+  float: left;
+}
+
+header .organizador #generaciones {
+  width: 250px;
+  background-color: #000;
+  display: inline-block;
+  margin-left: 4%;
+}
+
+header .organizador #generaciones ul {
+  padding: 0;
+  margin-left: 20px;
+  margin-top: 10px;
+  overflow: auto;
+}
+
+header .organizador #generaciones li {
+  list-style: none;
+  line-height: 25px;
+  margin: 0 auto;
+}
+
+header .organizador #generaciones li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.promedios {
+  height: 600px;
+  width: 100% auto;
+}
+
+.promedios .profes {
+  width: 80%;
+  height: 400px;
+  margin-left: 10%;
+  margin-top: 15px;
+  text-align: left;
+  border: 1px solid #717171;
+  border-radius: 10px;
+}
+
+.promedios .profes h3 {
+  margin-left: 15%;
+  text-decoration: underline;
+}
+
+.promedios .profes #notas_profes {
+  background-image: url(../assets/images/notas_profes.png);
+  background-size: cover;
+  width: 480px;
+  height: 130px;
+  z-index: 1000;
+  float: left;
+  margin-left: 5%;
+  margin-top: 25px;
+}
+
+.promedios .profes #line_top_x {
+  float: left;
+  margin-left: 3%;
+}
+
+/*sección de cada profesor individualmente. Al agregar nuevos
+se deben ir colocando sobre este y sin el atributo margin-bottom*/
+.promedios .profe_name {
+  width: 80%;
+  height: 300px;
+  margin-left: 10%;
+  margin-top: 15px;
+  margin-bottom: 200px;
+  text-align: left;
+  border: 1px solid #717171;
+  border-radius: 10px;
+}
+
+.promedios .profe_name h3 {
+  margin-left: 15%;
+  text-decoration: underline;
+}
+
+.promedios .profe_name #foto_prof {
+  background-image: url(../assets/images/profe_pic.png);
+  background-size: cover;
+  width: 180px;
+  height: 230px;
+  z-index: 1000;
+  float: left;
+  margin-left: 8%;
+}
+
+.promedios .profe_name #notas_prof {
+  background-image: url(../assets/images/cuadro_notas.png);
+  background-size: cover;
+  width: 340px;
+  height: 80px;
+  z-index: 1000;
+  float: left;
+  margin-left: 32%;
+  margin-top: -55px;
+}
+
+.promedios .profe_name .observaciones {
+  width: 550px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 10px;
+  float: left;
+  margin-left: 10%;
+  margin-top: 30px;
+}
+
+.promedios .profe_name .observaciones p {
+  width: 300px;
+  height: 100px;
+  margin-left: 15px;
+  text-align: left;
+  background-color: #fff;
+  border-radius: 10px;
+}

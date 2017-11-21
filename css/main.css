@@ -1,0 +1,333 @@
+/*
+ * Estilos de tu proyecto
+ font-family: 'Open Sans', sans-serif;
+ font-family: 'Roboto', sans-serif;
+ color: #FFC107;
+ color: #F7F7F7;
+ color: #333333;
+ color:
+ */
+
+body {
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  background-color: #F7F7F7;
+}
+
+header nav {
+  background-color: #fff;
+  background-attachment: fixed;
+  height: 70px;
+  width: 100% auto;
+}
+
+header #lab-logo {
+  background-image: url(../assets/images/laboratoria_logo.png);
+  background-size: cover;
+  width: 180px;
+  height: 45px;
+  margin: 0 auto;
+  display: inline-block;
+  float: left;
+  margin-top: 10px;
+  margin-left: 40%;
+  z-index: 1000;
+}
+
+header nav .btn-idioma, #display-sedes {
+  margin-right: 4%;
+  display: inline-block;
+  margin: 0 auto;
+  flex: auto;
+  margin-left: 30%;
+  margin-top: 15px;
+  font-size: 15px;
+  color: #FFC107;
+}
+
+header nav .btn-idioma a {
+  text-decoration: none;
+  color: #FFC107;
+  padding-left: 10px;
+}
+
+/*estilo de menú sedes desplegable*/
+header nav #display-sedes {
+  padding-left: 10px;
+  width: 170px;
+  line-height: 30px;
+  margin-top: 0;
+  font-weight: bold;
+}
+
+header nav #sedes {
+  width: 170px;
+  background-color: #000;
+  display: inline-block;
+  margin-left: 4%;
+}
+
+header nav #sedes ul {
+  padding: 0;
+  margin-left: 20px;
+  margin-top: 10px;
+  overflow: auto;
+}
+
+header nav #sedes li {
+  list-style: none;
+  line-height: 25px;
+  margin: 0 auto;
+}
+
+header nav #sedes li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header .organizador {
+  height: 80px;
+  background-color: #FFC107;
+}
+
+header .organizador .menus {
+ margin-left: 8%;
+ height: 30px;
+ position: absolute;
+ margin-top: 35px;
+}
+
+header .organizador .menus li {
+  list-style: none;
+  text-decoration: none;
+  float: left;
+  margin-right: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+header .organizador .menus li a {
+  text-decoration: none;
+  padding: 7px 20px 15px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+header .menus li a:hover {
+  background-color: #F7F7F7;
+  color: #333333;
+}
+
+/*estilo de menú generaciones desplegable*/
+header .organizador #display-generacion {
+  text-align: center;
+  line-height: 30px;
+  width: 250px;
+  margin-left: 4%;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #333333;
+  float: left;
+}
+
+header .organizador #generaciones {
+  width: 250px;
+  background-color: #000;
+  display: inline-block;
+  margin-left: 4%;
+}
+
+header .organizador #generaciones ul {
+  padding: 0;
+  margin-left: 20px;
+  margin-top: 10px;
+  overflow: auto;
+}
+
+header .organizador #generaciones li {
+  list-style: none;
+  line-height: 25px;
+  margin: 0 auto;
+}
+
+header .organizador #generaciones li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.promedios {
+  height: 600px;
+  width: 100% auto;
+}
+
+.promedios .alumnas {
+  width: 80%;
+  height: 350px;
+  margin-left: 10%;
+  margin-top: 15px;
+  text-align: left;
+  border: 1px solid #717171;
+  border-radius: 10px;
+}
+
+.promedios .alumnas h3 {
+  margin-left: 15%;
+  text-decoration: underline;
+}
+
+.promedios .alumnas #mujer {
+  background-image: url(../assets/images/chica.png);
+  background-size: cover;
+  width: 180px;
+  height: 180px;
+  z-index: 1000;
+  float: left;
+  margin-left: 9%;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.promedios .alumnas #mujer p {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 185px;
+}
+
+.promedios .alumnas #alumnas_generacion {
+  margin-left: 2%;
+  margin-top: 25px;
+  float: left;
+}
+
+.promedios .alumnas .quedan {
+  float: left;
+  margin-left: 2%;
+  margin-top: 20px;
+  width: 100px;
+}
+
+.promedios .alumnas #desertora {
+  background-image: url(../assets/images/desertora.png);
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  z-index: 1000;
+}
+
+.promedios .alumnas #desertora p {
+  font-size: 28px;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 110px;
+  margin-top: 30px;
+}
+
+.promedios .alumnas #laboratorian {
+  background-image: url(../assets/images/laboratorian.png);
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  z-index: 1000;
+  margin-top: 10px;
+}
+
+/*Estilos de NT*/
+.promedios .tecnico {
+  width: 80%;
+  height: 350px;
+  margin-left: 10%;
+  margin-top: 15px;
+  text-align: left;
+  border: 1px solid #717171;
+  border-radius: 10px;
+  float: left;
+}
+
+.promedios .tecnico h3 {
+  margin-left: 15%;
+  text-decoration: underline;
+}
+
+.promedios .tecnico #NT_sprint1, #NT_sprint2  {
+  float: left;
+}
+
+/*Estilos de HSE*/
+.promedios .HSE {
+  width: 80%;
+  height: 350px;
+  margin-left: 10%;
+  margin-top: 15px;
+  text-align: left;
+  border: 1px solid #717171;
+  border-radius: 10px;
+  float: left;
+}
+
+.promedios .HSE h3 {
+  margin-left: 15%;
+  text-decoration: underline;
+}
+
+.promedios .HSE #HSE_sprint1, #HSE_sprint2  {
+  float: left;
+}
+
+/*Estilos de NPS*/
+.promedios .NPS {
+  width: 80%;
+  height: 380px;
+  margin-left: 10%;
+  margin-top: 15px;
+  text-align: left;
+  border: 1px solid #717171;
+  border-radius: 10px;
+  float: left;
+}
+
+.promedios .NPS h3 {
+  margin-left: 15%;
+  text-decoration: underline;
+}
+
+.promedios .NPS ul {
+  margin-left: 16%;
+}
+
+.promedios .NPS li {
+  font-size: 16px;
+  font-weight: bold;
+  list-style: none;
+  float: left;
+  margin-right: 100px;
+}
+
+.promedios .NPS #NPS_values {
+  margin-top: -50px;
+  margin-left: 3%;
+}
+
+.promedios .satisfaccion {
+  width: 80%;
+  height: 350px;
+  margin-left: 10%;
+  margin-top: 15px;
+  text-align: left;
+  border: 1px solid #717171;
+  border-radius: 10px;
+  float: left;
+}
+
+.promedios .satisfaccion h3 {
+  margin-left: 15%;
+  text-decoration: underline;
+}
+
+.promedios .satisfaccion #sat_sprint1, #sat_sprint2  {
+  float: left;
+}
+
+.promedios .satisfaccion #sat_sprint1 {
+
+}

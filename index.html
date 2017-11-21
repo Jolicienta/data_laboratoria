@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Data Dashboard</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+
+<!--graficos-->
+
+<!--Load the AJAX API-->
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+
+  //-> GRÁFICO NIVEL TÉCNICO
+  // NT SPRINT 1
+  google.charts.load('current', {'packages':['corechart']});
+
+  // Set a callback to run when the Google Visualization API is loaded.
+  google.charts.setOnLoadCallback(drawChartNT);
+
+  // Callback that creates and populates a data table,
+  // instantiates the pie chart, passes in the data and
+  // draws it.
+  function drawChartNT() {
+
+    // Create the data table.
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Topping');
+    data.addColumn('number', 'Slices');
+    data.addRows([
+      ['Lo superan', 15],
+      ['No lo superan', 11]
+    ]);
+
+    // Set chart options
+    var options = {'title':'Primer Sprint',
+                   'width':500,
+                   'height':300,
+                   'backgroundColor': "none",
+                   'colors':['#FFC107','#717171']};
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.PieChart(document.getElementById('NT_sprint1'));
+    chart.draw(data, options);
+  }
+
+  // NT SPRINT 2
+  // Load the Visualization API and the corechart package.
+  google.charts.load('current', {'packages':['corechart']});
+
+  // Set a callback to run when the Google Visualization API is loaded.
+  google.charts.setOnLoadCallback(drawChartNT2);
+
+  // Callback that creates and populates a data table,
+  // instantiates the pie chart, passes in the data and
+  // draws it.
+  function drawChartNT2() {
+
+    // Create the data table.
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Topping');
+    data.addColumn('number', 'Slices');
+    data.addRows([
+      ['Lo superan', 16],
+      ['No lo superan', 10]
+    ]);
+
+    // Set chart options
+    var options = {'title':'Segundo Sprint',
+                   'width':500,
+                   'height':300,
+                   'backgroundColor': "none",
+                   'colors':['#FFC107','#717171']};
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.PieChart(document.getElementById('NT_sprint2'));
+    chart.draw(data, options);
+  }
+
+    //-> GRAFICOS PROMEDIOS HSE
+    // HSE SPRINT 1
+    // Load the Visualization API and the corechart package.
+    google.charts.load('current', {'packages':['corechart']});
+
+    // Set a callback to run when the Google Visualization API is loaded.
+    google.charts.setOnLoadCallback(drawChartHSE);
+
+    // Callback that creates and populates a data table,
+    // instantiates the pie chart, passes in the data and
+    // draws it.
+    function drawChartHSE() {
+
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Topping');
+      data.addColumn('number', 'Slices');
+      data.addRows([
+        ['Lo superan', 15],
+        ['No lo superan', 11]
+      ]);
+
+      // Set chart options
+      var options = {'title':'Primer Sprint',
+                     'width':500,
+                     'height':300,
+                     'backgroundColor': "none",
+                     'colors':['#1f78b4','#717171']};
+
+      // Instantiate and draw our chart, passing in some options.
+      var chart = new google.visualization.PieChart(document.getElementById('HSE_sprint1'));
+      chart.draw(data, options);
+    }
+
+  // HSE SPRINT 2
+  google.charts.load('current', {'packages':['corechart']});
+
+  // Set a callback to run when the Google Visualization API is loaded.
+  google.charts.setOnLoadCallback(drawChartHSE2);
+
+  // Callback that creates and populates a data table,
+  // instantiates the pie chart, passes in the data and
+  // draws it.
+  function drawChartHSE2() {
+
+    // Create the data table.
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Topping');
+    data.addColumn('number', 'Slices');
+    data.addRows([
+      ['Lo superan', 16],
+      ['No lo superan', 10]
+    ]);
+
+    // Set chart options
+    var options = {'title':'Segundo Sprint',
+                   'width':500,
+                   'height':300,
+                   'backgroundColor': "none",
+                   'colors':['#1f78b4','#717171']};
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.PieChart(document.getElementById('HSE_sprint2'));
+    chart.draw(data, options);
+  }
+  // SATISFACCIÓN SPRINT 1
+  google.charts.load('current', {'packages':['corechart']});
+
+  // Set a callback to run when the Google Visualization API is loaded.
+  google.charts.setOnLoadCallback(drawChartSat1);
+
+  // Callback that creates and populates a data table,
+  // instantiates the pie chart, passes in the data and
+  // draws it.
+  function drawChartSat1() {
+
+    // Create the data table.
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Topping');
+    data.addColumn('number', 'Slices');
+    data.addRows([
+      ['Laboratoria No cumple', 3],
+      ['Laboratoria cumple', 90],
+      ['Laboratoria supera', 7]
+    ]);
+
+    // Set chart options
+    var options = {'title':'Primer Sprint',
+                   'width':500,
+                   'height':300,
+                   'backgroundColor': "none",
+                   'colors':['#ff4947', '#1f78b4', '#FFC107']};
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.PieChart(document.getElementById('sat_sprint1'));
+    chart.draw(data, options);
+  }
+
+  // SATISFACCIÓN SPRINT 2
+  google.charts.load('current', {'packages':['corechart']});
+
+  // Set a callback to run when the Google Visualization API is loaded.
+  google.charts.setOnLoadCallback(drawChartSat2);
+
+  // Callback that creates and populates a data table,
+  // instantiates the pie chart, passes in the data and
+  // draws it.
+  function drawChartSat2() {
+
+    // Create the data table.
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Topping');
+    data.addColumn('number', 'Slices');
+    data.addRows([
+      ['Laboratoria No cumple', 2],
+      ['Laboratoria cumple', 65],
+      ['Laboratoria supera', 33]
+    ]);
+
+    // Set chart options
+    var options = {'title':'Segundo Sprint',
+                   'width':500,
+                   'height':300,
+                   'backgroundColor': "none",
+                   'colors':['#ff4947', '#1f78b4', '#FFC107']};
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.PieChart(document.getElementById('sat_sprint2'));
+    chart.draw(data, options);
+  }
+
+    // ->GRAFICO DESERCION DE ALUMNAS
+      google.charts.load('current', {'packages':['sankey']});
+      google.charts.setOnLoadCallback(drawChartDesercion);
+
+      function drawChartDesercion() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'From');
+        data.addColumn('string', 'To');
+        data.addColumn('number', 'Alumnas');
+        data.addRows([
+          [ 'Ingresaron', 'Desertaron', 33 ],
+          [ 'Ingresaron', 'Continuan', 26 ],
+        ]);
+
+        // Sets chart options.
+        var colors = ['#1f78b4','#fe7c7b', '#FFC107',];
+        var options = {
+            weight: 450,
+            height: 200,
+            sankey: {
+              node: { colors: colors },
+              node: { label: { fontName: 'Roboto',
+                              fontSize: 14,
+                              bold: true } },
+            link: { colorMode: 'gradient',
+                    colors: colors } } };
+
+        // Instantiates and draws our chart, passing in some options.
+        var chart = new google.visualization.Sankey(document.getElementById('alumnas_generacion'));
+        chart.draw(data, options);
+      }
+
+    // -> GRAFICO NPS
+    google.charts.load("current", {packages:['corechart']});
+    google.charts.setOnLoadCallback(drawChartNPS);
+    function drawChartNPS() {
+      var data = google.visualization.arrayToDataTable([
+        ["Conformidad", "Alumnas", { role: "style" } ],
+        ["1er Sprint", 80, "#FFC107"],
+        ["2do Sprint", 93, "#FFC107"],
+        ["1er Sprint", 16, "#1f78b4"],
+        ["2do Sprint", 2, "#1f78b4"],
+        ["1er Sprint", 4, "#ff4947"],
+        ["2do Sprint", 5, "#ff4947"],
+        ["1er Sprint", 76 , "color: #ff6e00"],
+        ["2do Sprint", 88 , "color: #ff6e00"]
+      ]);
+
+      var view = new google.visualization.DataView(data);
+      view.setColumns([0, 1,
+                       { calc: "stringify",
+                         sourceColumn: 1,
+                         type: "string",
+                         role: "annotation" },
+                       2]);
+
+      var options = {
+        width: 1000,
+        height: 400,
+        bar: {groupWidth: "95%"},
+        legend: { position: "none" },
+        'backgroundColor': "none",
+      };
+
+      var chart = new google.visualization.ColumnChart(document.getElementById("NPS_values"));
+      chart.draw(view, options);
+  }
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div id="lab-logo"></div>
+        <div class="btn-idioma"><a href="#" style="fontWeight: bold;">ES</a>/<a href="#" style="fontWeight: bold;">EN</a></div>
+        <a href="#"><div id="display-sedes">Sede <p style="font-size: 12px; display: inline;">▼</p></div></a>
+        <!--display de sedes
+        <div id="sedes">
+          <ul>
+            <li><a href="#">Lima | Perú</a></li>
+            <li><a href="#">Arequipa | Perú</a></li>
+            <li><a href="#">Santiago | Chile</a></li>
+          </ul>
+        </div>-->
+        <!--display de sedes-->
+          <!--<select id="sedes">
+            <option value="" selected="selected"> Santiago | Chile </option>
+            <option value="arequipa">Arequipa | Perú</option>
+            <option value="lima">Lima | Perú</option>
+            <option value="mex DF">Ciudad de México | México</option>
+          </select>-->
+      </nav>
+      <div class="organizador">
+        <a href="#"><div id="display-generacion">2017 | Primera Generación <p style="font-size: 13px; display: inline;">▼</p></div></a>
+        <!--display generaciones
+        <div id="generaciones">
+          <ul>
+            <li><a href="#">2017 | Segunda Generación</a></li>
+            <li><a href="#">2017 | Primera Generación</a></li>
+            <li><a href="#">2016 | Segunda Generación</a></li>
+            <li><a href="#">2016 | Primera Generación</a></li>
+            <li><a href="#">2015 | Segunda Generación</a></li>
+            <li><a href="#">2015 | Primera Generación</a></li>
+          </ul>
+        </div>-->
+        <div class="menus">
+          <ul>
+            <li id="notas"><a href="#">PROMEDIOS</a></li>
+            <li id="estudiantes"><a href="#">LABORATORIANS</a></li>
+            <li id="profes"><a href="#">PROFESORES</a></li>
+            <li id="jedis"><a href="#">JEDI MASTERS</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="promedios">
+      <div class="alumnas">
+        <h3>Las Laboratorians</h3>
+        <div id="mujer"><p>Total Ingreso: 59 alumnas</p></div>
+        <div id="alumnas_generacion"></div>
+        <div class="quedan">
+          <div id="desertora"><p>56%</p></div>
+          <div id="laboratorian"></div>
+        </div>
+      </div>
+
+      <div class="tecnico">
+        <h3>Alumnas que superan el promedio del nivel técnico</h3>
+        <div id="NT_sprint1"></div>
+        <div id="NT_sprint2"></div>
+      </div>
+
+      <div class="HSE">
+        <h3>Alumnas que superan el promedio del nivel de HSE</h3>
+        <div id="HSE_sprint1"></div>
+        <div id="HSE_sprint2"></div>
+      </div>
+
+      <div class="NPS">
+        <h3>Net Promoter Score (NPS) promedio</h3>
+        <ul>
+          <li style="color: #FFC107;">PROMOTORAS</li>
+          <li style="color: #1f78b4;">PASIVAS</li>
+          <li style="color: #ff4947;">DETRACTORAS</li>
+          <li style="color: #ff6e00;">NPS</li>
+        </ul>
+        <div id="NPS_values" style="width: 250px; height: 170px;"></div>
+      </div>
+
+      <div class="satisfaccion">
+        <h3>Alumnas satisfechas con Laboratoria</h3>
+        <div id="sat_sprint1"></div>
+        <div id="sat_sprint2"></div>
+      </div>
+
+
+    </section>
+
+
+
+	 <script type="text/javascript" src="assets/js/app.js"></script>
+   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  </body>
+</html>
